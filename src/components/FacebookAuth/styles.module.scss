@@ -1,0 +1,5 @@
+@import '../source/styles/styles.scss';
+
+.loadedUserContent {
+  @include loadedUserContent
+}
