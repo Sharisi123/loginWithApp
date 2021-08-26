@@ -4,10 +4,8 @@ import GitHubAuth from '../../components/GitHubAuth'
 import styles from './styles.module.scss'
 import TwitterAuth from '../../components/TwitterAuth'
 import FacebookAuth from '../../components/FacebookAuth'
-// import { useAuth0 } from '@auth0/auth0-react'
 
 const Login = () => {
-  // const { loginWithRedirect } = useAuth0();
 
   return (
     <div className={styles.login}>
@@ -19,7 +17,6 @@ const Login = () => {
           <TwitterAuth />
           <FacebookAuth />
         </div>
-        {/* <button onClick={() => loginWithRedirect()}>Log in</button> */}
       </div>
     </div>
   )

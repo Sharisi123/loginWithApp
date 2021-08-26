@@ -25,7 +25,7 @@ const FacebookAuth = () => {
       Promise.all([logStatus, loginFunc]).then(() => {
         window.FB.api(`/${id}?fields=id,name,email,picture&access_token=${token}`, (response: any) => {
           setName(response.name)
-          setEmail(response.email.length > 13 ? response.email.split('@').join(' @') : response.email)
+          setEmail(response.email.length > 13 ? response.email.replace('@', ' @') : response.email)
           setImg(response.picture.data.url)
         })
       })

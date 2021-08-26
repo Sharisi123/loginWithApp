@@ -50,12 +50,14 @@ const GitHubAuth = () => {
       console.error(e)
     }
   }
-
+  // console.log(location.origin)
   const signOut = () => {
+    window.history.pushState({}, document.title, '/')
     setLogin('')
     setName('')
     setImg('')
     code = ''
+
   }
 
   return (
